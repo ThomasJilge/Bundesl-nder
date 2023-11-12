@@ -1,0 +1,98 @@
+body {
+    margin: 5px;
+}
+
+header {
+    background: lightgrey;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666666;
+}
+
+.bundeslandBox {
+    display: block;
+    text-decoration: none;
+    border: 5px solid lightgrey;
+    padding: 10px;
+    color: black;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.bundeslandBox:hover {
+    border: 5px solid gray;
+    cursor: pointer;
+}
+
+.textGrey {
+    color: lightgrey;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#letterBox {
+    display: flex;
+    gap: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.letter {
+    border: 1px solid lightgrey;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.letter:hover {
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+}
+
+.buttonStates {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+}
+
+.buttonStates:hover {
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+}
+
+@media(max-width: 800px) {
+
+    .bundeslandBox {
+        width: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .bundeslandBox {
+        width: calc(100% - 10px);
+    }
+
+}
